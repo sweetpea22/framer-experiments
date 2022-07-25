@@ -51,4 +51,20 @@
     width: 45%;
     margin: 5rem 3rem;
   }
+  p::selection {
+    background:#002db0; 
+  }
+  .second {
+    background: #121212;
+    position: relative;
+    top: 20vh;
+    width: 70%;
+    height: 25vh;
+    border-radius: 3rem;
+    padding: 2rem 0;
+    p {
+      width: 100%;
+      margin: 1rem 3rem;
+    }
+  }
 }
