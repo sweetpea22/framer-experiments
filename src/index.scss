@@ -1,13 +1,17 @@
 @import "./styles/typography.scss";
 
 body {
-  margin: 0 auto;
-  background-color: #F5F0E9;
+  margin: 0;
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+
 }
 
+body::webkit-scrollbar {
+  display: none;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -1,0 +1,53 @@
+@import "../../styles/colors.scss";
+
+// .main {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items:center;
+//   min-height: 100vh;
+// }
+
+// .wrapper {
+//   position: relative;
+//   width: 100%;
+// }
+
+.homepage {
+  position: relative;
+  // z-index: 0;
+  width: 100%;
+  height: 200vh;
+  background-image: url('./s2.png');
+  background-size: contain;
+  background-repeat: repeat;
+
+
+  .mask {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    mask: url('./mask.png');
+    background: black;
+    mask-size: contain;
+    -webkit-mask: url('./mask.png');
+    -webkit-mask-size: contain;
+
+    
+  }
+  h1 {
+    position: fixed;
+    z-index: 4;
+    text-align: center;
+    top: 30vh;
+    font-size: 120px;
+    width: 100%;
+    color: white;
+  }
+}
+
+// .content {
+//   width: 100%;
+//   height: 200vh;
+// }
