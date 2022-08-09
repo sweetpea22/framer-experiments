@@ -4,11 +4,12 @@ export interface IOffsetHeight {
   offsetHeight?: number;
 }
 
+
 export const useOffsetHeight = (debounceTime = 250) => {
   const [offsetHeight, setOffsetHeight] = useState<IOffsetHeight>({
-    offsetHeight: undefined
+    offsetHeight: 0
   });
-
+  
   const debounce = (fn: Function, ms: number) => {
     let timer: number | null;
     return () => {
@@ -19,6 +20,7 @@ export const useOffsetHeight = (debounceTime = 250) => {
       }, ms);
     };
   };
+
 
   useEffect(() => {
     const debouncedHandleResize = debounce(() => {

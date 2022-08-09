@@ -5,10 +5,10 @@ export interface IViewportSize {
   height?: number;
 }
 
-export const useViewportSize = (debounceTime = 250) => {
+export const useViewportSize = (debounceTime = 1000) => {
   const [viewportSize, setViewportSize] = useState<IViewportSize>({
-    width: undefined,
-    height: undefined
+    width: 0,
+    height: 0
   });
 
   const debounce = (fn: Function, ms: number) => {
