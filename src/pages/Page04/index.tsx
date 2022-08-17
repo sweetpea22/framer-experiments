@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useAnimation, motion } from 'framer-motion';
 import { useContributors } from './useContributors';
 import './index.scss';
 
@@ -9,10 +10,12 @@ export const Page04 = () => {
   return (
     <div className='page4'>
       {contributors.map((c:any) => (
-        <a href={c.html_url} key={c.id}>
-          <p>{c.login}</p>
-          <img src={c.avatar_url} alt={c.name} />
-        </a>
+        <div>
+          <a href={c.html_url} key={c.id}>
+            <p>{c.login}</p>
+            <img src={c.avatar_url} alt={c.name} />
+          </a>
+        </div>
       ))}
     </div>
   )
