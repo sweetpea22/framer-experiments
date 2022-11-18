@@ -76,8 +76,8 @@ export const ParallaxText = ({ children, baseVelocity = 40 }: ParallaxProps) => 
 export default function Page05() {
   return (
     <section className='page05'>
-      <ParallaxText baseVelocity={-1}>Light Clients</ParallaxText>
-      <ParallaxText baseVelocity={2}>Light Clients</ParallaxText>
+      <ParallaxText baseVelocity={-1}>light clients</ParallaxText>
+      <ParallaxText baseVelocity={2}>light clients</ParallaxText>
     </section>
   );
 }

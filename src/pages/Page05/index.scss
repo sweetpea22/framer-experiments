@@ -149,7 +149,7 @@ img {
 .parallax {
   overflow: hidden;
   letter-spacing: -2px;
-  line-height: 0.8;
+  line-height: 140px;
   margin: 0;
   white-space: nowrap;
   display: flex;
@@ -157,9 +157,8 @@ img {
 }
 
 .parallax .scroller {
-  font-size: 120px;
-  height: 150px;
-  // letter-spacing: 3px;
+  font-size: 90px;
+  height: 120px;
   display: flex;
   white-space: nowrap;
   display: flex;
