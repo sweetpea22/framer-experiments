@@ -10,7 +10,7 @@ export function GradientTest() {
       duration: 10,
       repeat: Infinity,
       repeatType: 'mirror',
-      onUpdate: (v) =>
+      onUpdate: (v: any) =>
         gradient.setAttribute('gradientTransform', `rotate(${v} 0.5 0.5)`),
     });
 
@@ -25,14 +25,14 @@ export function GradientTest() {
         <defs>
           <linearGradient id='MyGradient2'>
             <stop offset='50%' stopColor='rgb(13, 20, 13)' />
-            <stop offset='95%' stopColor='rgb(180, 255, 95)' />
+            <stop offset='95%' stopColor='rgb(35, 50, 30)' />
             <animateTransform
               attributeName='gradientTransform'
               attributeType='XML'
               type='rotate'
               from='0 0.2 0.9'
               to='360 0.5 0.5'
-              dur='30s'
+              dur='25s'
               repeatCount='indefinite'
             />
           </linearGradient>
