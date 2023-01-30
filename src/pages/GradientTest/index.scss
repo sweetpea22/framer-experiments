@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: sans-serif;
+  display: grid;
+}
+
+svg {
+  height: calc(100vh / 2);
+  width: 100vw;
+}
